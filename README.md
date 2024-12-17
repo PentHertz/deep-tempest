@@ -33,16 +33,14 @@ We are particularly interested in recovering the text present in the display, an
 You can find a detailed technical explanation of how deep-tempest works in [**our article**](https://arxiv.org/abs/2407.09717). If you found our work or data useful for your research, please consider citing it as follows:
 
 ````
-@misc{fernández2024deeptempestusingdeeplearning,
-      title={Deep-TEMPEST: Using Deep Learning to Eavesdrop on HDMI from its Unintended Electromagnetic Emanations}, 
-      author={Santiago Fernández and Emilio Martínez and Gabriel Varela and Pablo Musé and Federico Larroca},
-      year={2024},
-      eprint={2407.09717},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR},
-      url={https://arxiv.org/abs/2407.09717},
-      note={Submitted}
+@inproceedings{deep_tempest,
+author = {Fern\'{a}ndez, Santiago and Mart\'{\i}nez, Emilio and Varela, Jorge and Mus\'{e}, Pablo and Larroca, Federico},
+title = {Deep-TEMPEST: Using Deep Learning to Eavesdrop on HDMI from its Unintended Electromagnetic Emanations},
+year = {2024},
+url = {https://doi.org/10.1145/3697090.3697094},
+booktitle = {Proceedings of the 13th Latin-American Symposium on Dependable and Secure Computing (LADC '24)},
 }
+
 ````
 
 ## Data
