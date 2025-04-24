@@ -8,6 +8,20 @@ In this project we have extended the original [**gr-tempest**](https://github.co
 
 <img src="examples.png"/>
 
+The following external webpages provide a nice summary of the work:
+* NewScientist: [AI can reveal what’s on your screen via signals leaking from cables](https://www.newscientist.com/article/2439853-ai-can-reveal-whats-on-your-screen-via-signals-leaking-from-cables/)
+* RTL-SDR.com: [DEEP-TEMPEST: EAVESDROPPING ON HDMI VIA SDR AND DEEP LEARNING](https://www.rtl-sdr.com/deep-tempest-eavesdropping-on-hdmi-via-sdr-and-deep-learning/)
+* PC World: [Hackers can wirelessly watch your screen via HDMI radiation](https://www.pcworld.com/article/2413156/hackers-can-wirelessly-watch-your-screen-via-hdmi-radiation.html)
+* Techspot: [AI can see what's on your screen by reading HDMI electromagnetic radiation](https://www.techspot.com/news/104015-ai-can-see-what-screen-reading-hdmi-electromagnetic.html)
+* Futura: [Hallucinant : ce système permet d’afficher et espionner ce qu’il y a sur l’écran d’un ordinateur déconnecté](https://www.futura-sciences.com/tech/actualites/technologie-hallucinant-ce-systeme-permet-afficher-espionner-ce-quil-y-ecran-ordinateur-deconnecte-114883/)
+* hackster.io: [Deep-TEMPEST Reveals All](https://www.hackster.io/news/deep-tempest-reveals-all-c8cb4f0ebd08)
+* Hacker News: [Deep-Tempest: Using Deep Learning to Eavesdrop on HDMI](https://news.ycombinator.com/item?id=41116682)
+* TechXplore: [Security researchers reveal it is possible to eavesdrop on HDMI cables to capture computer screen data](https://techxplore.com/news/2024-07-reveal-eavesdrop-hdmi-cables-capture.html)
+* Tom's Hardware: [AI can snoop on your computer screen using signals leaking from HDMI cables — researchers develop new AI model that enables using antennas for long-range attacks](https://www.tomshardware.com/tech-industry/cyber-security/ai-can-snoop-on-your-computer-screen-using-signals-leaking-from-hdmi-cables)
+* Montevideo Portal: [¿Por qué la inteligencia artificial puede ver una pantalla? Un estudio uruguayo indagó](https://www.montevideo.com.uy/Ciencia-y-Tecnologia/-Por-que-la-inteligencia-artificial-puede-ver-una-pantalla-Un-estudio-uruguayo-indago-uc895790)
+* El Observador: [Uruguayos interceptan señales del cable HDMI para espiar monitores y asombran al mundo](https://www.elobservador.com.uy/uruguayos-interceptan-senales-del-cable-hdmi-espiar-monitores-y-asombran-al-mundo-n5954308)
+* El País: [La amenaza invisible: uruguayos descubrieron cómo un hacker podría espiar tu pantalla a través del cable HDMI](https://www.elpais.com.uy/domingo/la-amenaza-invisible-uruguayos-descubrieron-como-un-hacker-podria-espiar-tu-pantalla-a-traves-del-cable-hdmi)
+
 ## Video demo
 
 We are particularly interested in recovering the text present in the display, and we improve the Character Error Rate from 90% in the unmodified gr-tempest, to less than 30% using our module. Watch a video of the full system in operation:
@@ -16,19 +30,17 @@ We are particularly interested in recovering the text present in the display, an
 
 ## How does it works? (and how to cite our work or data)
 
-You can find a detailed technical explanation of how deep-tempest works in the reference below. If you found our work or data useful for your research, please consider citing it as follows:
+You can find a detailed technical explanation of how deep-tempest works in [**our article**](https://arxiv.org/abs/2407.09717). If you found our work or data useful for your research, please consider citing it as follows:
 
 ````
-@misc{fernández2024deeptempestusingdeeplearning,
-      title={Deep-TEMPEST: Using Deep Learning to Eavesdrop on HDMI from its Unintended Electromagnetic Emanations}, 
-      author={Santiago Fernández and Emilio Martínez and Gabriel Varela and Pablo Musé and Federico Larroca},
-      year={2024},
-      eprint={2407.09717},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR},
-      url={https://arxiv.org/abs/2407.09717},
-      note={Submitted}
+@inproceedings{deep_tempest,
+author = {Fern\'{a}ndez, Santiago and Mart\'{\i}nez, Emilio and Varela, Jorge and Mus\'{e}, Pablo and Larroca, Federico},
+title = {Deep-TEMPEST: Using Deep Learning to Eavesdrop on HDMI from its Unintended Electromagnetic Emanations},
+year = {2024},
+url = {https://doi.org/10.1145/3697090.3697094},
+booktitle = {Proceedings of the 13th Latin-American Symposium on Dependable and Secure Computing (LADC '24)},
 }
+
 ````
 
 ## Data
@@ -95,6 +107,8 @@ Regarding installations with GNU Radio, **it is necessary to use the [gr-tempest
 - [Keep_1_in_N_frames.grc](./gr-tempest/examples/Keep_1_in_N_frames.grc)
 
 Finally run the flowgraph [deep-tempest_example.grc](./gr-tempest/examples/deep-tempest_example.grc) to capture the monitor images and be able to recover them with better quality using the *Save Capture* block.
+
+## Credits
 
 IIE Instituto de Ingeniería Eléctrica, 
 Facultad de Ingeniería, 
